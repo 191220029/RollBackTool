@@ -1,1 +1,0 @@
-./target/release/RollBackTool roll_back --url-file url.json --local-repo ../rust/rust-master --out-dir ../rust

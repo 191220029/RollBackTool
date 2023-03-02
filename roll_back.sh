@@ -1,0 +1,1 @@
+./target/release/RollBackTool roll_back_local --html-cache-dir ./cache/html --local-repo ../rust/rust-master --out-dir ../rust

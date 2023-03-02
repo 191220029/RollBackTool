@@ -1,0 +1,1 @@
+./target/release/RollBackTool cache_pr --html-cache-dir cache/html --pr-urls url.json

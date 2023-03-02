@@ -10,10 +10,10 @@ pub struct Cli {
 #[derive(Debug, clap::Subcommand)]
 #[clap(rename_all = "snake_case")]
 pub enum Commands {
-    RollBack {
+    RollBackLocal {
         // input urls of pull request
-        #[clap(long = "url-file")]
-        url_file: PathBuf,
+        #[clap(long = "html-cache-dir")]
+        html_cache_dir: PathBuf,
     
         // local repository dir
         #[clap(long = "local-repo")]
@@ -22,5 +22,15 @@ pub enum Commands {
         // output dir
         #[clap(long = "out-dir")]
         out_dir: PathBuf
+    },
+
+    CachePR {
+        // input urls of pull request
+        #[clap(long = "html-cache-dir")]
+        html_cache_dir: PathBuf,
+
+        // pr json
+        #[clap(long = "pr-urls")]
+        pr_urls: PathBuf
     }
 }
